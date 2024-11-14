@@ -33,7 +33,7 @@ def get_shop_list_by_dishes(
             continue
         for ingredient in ingredients:
             name = ingredient["ingredient_name"]
-            quantity = int(ingredient["quantity"])
+            quantity = ingredient["quantity"]
             measure = ingredient["measure"]
             all_ingredients.setdefault(
                 name,
